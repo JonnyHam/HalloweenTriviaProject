@@ -8,12 +8,12 @@ public class TriviaReader {
     private ArrayList<String> answers;
 
     //This constructor reads all the necessary trivia questions for the level (number) asked when initialized (from the text documents).
-    public TriviaReader(int num) throws Exception{
+    public TriviaReader(int level, String mode) throws Exception{
         trivia = new ArrayList<>();
         questions = new ArrayList<>();
         answers = new ArrayList<>();
 
-        File file = new File("C:\\Users\\Jonathan Kim\\Documents\\HalloweenTriviaProject\\src\\HalloweenTrivia" + num + ".txt");
+        File file = new File("C:\\Users\\Jonathan Kim\\Documents\\HalloweenTriviaProject\\src\\" + mode + level + ".txt");
 
         BufferedReader br = new BufferedReader(new FileReader(file));
 
