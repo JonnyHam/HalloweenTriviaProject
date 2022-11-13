@@ -49,9 +49,6 @@ public class TriviaReader {
 
     //This method declares whether an answer is correct or not, through a true or false statement.
     public boolean isAnswerCorrect (int num, String answer) {
-        if ((answer).equalsIgnoreCase(answers.get(num))) {
-            return true;
-        }
-        return false;
+        return (answer).equalsIgnoreCase(answers.get(num));
     }
 }
